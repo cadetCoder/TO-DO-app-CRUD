@@ -9,3 +9,7 @@ body {
   border-radius: 8px;
   background-color: white;
 }
+
+#addNew {
+  background-color: rgba(171, 206, 161, 0.35);
+}
