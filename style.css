@@ -11,5 +11,11 @@ body {
 }
 
 #addNew {
+  display: flex;
   background-color: rgba(171, 206, 161, 0.35);
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
