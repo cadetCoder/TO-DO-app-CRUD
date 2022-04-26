@@ -25,3 +25,8 @@ body {
   padding: 3px;
   border-radius: 3px;
 }
+
+#tasks div {
+  background-color: #e2eede;
+  border: 3px solid #abcea1;
+}
