@@ -29,4 +29,6 @@ body {
 #tasks div {
   background-color: #e2eede;
   border: 3px solid #abcea1;
+  padding: 5px;
+  border-radius: 6px;
 }
