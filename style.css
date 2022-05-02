@@ -46,6 +46,7 @@ body {
   padding: 5px;
   border-radius: 6px;
   display: grid;
+  gap: 4px;
 }
 
 
