@@ -49,4 +49,6 @@ body {
   gap: 4px;
 }
 
-
+.options {
+  justify-self: center;
+}
