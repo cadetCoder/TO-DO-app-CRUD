@@ -53,3 +53,7 @@ body {
   justify-self: center;
   display: flex;
 }
+
+.options i {
+  cursor: pointer;
+}
