@@ -8,9 +8,9 @@ form.addEventListener("submit", (e)=>{
 
 let formValidation = ()=> {
   if(textInput.value === ""){
-    msg.innerHTML = "Task cannot be blank"
+    msg.innerHTML = "Task cannot be blank";
   }
   else {
-
+    msg.innerHTML = "";
   }
 }
