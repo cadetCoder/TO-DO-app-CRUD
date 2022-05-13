@@ -19,4 +19,6 @@ let formValidation = ()=> {
 
 let data = {};
 
-let acceptData = () => {};
+let acceptData = () => {
+  data["text"] = textInput.value;
+};
