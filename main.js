@@ -29,6 +29,15 @@ let acceptData = () => {
   createTasks();
 };
 
-let createTasks =() => {
-  tasks.innerHTML += ""
+let createTasks = () => {
+  tasks.innerHTML += `
+  <div>
+  <Span class="fw-bold">${data.text}</Span>
+  <Span class="small text-secondary">${data.date}</Span>
+  <p>${data.description}</p>
+  <span class="options">
+    <i class="fas fa-edit"></i>
+    <i class="fas fa-trash-alt"></i>
+  </span>
+</div>`;
 }
