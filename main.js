@@ -3,6 +3,7 @@ let textInput = document.getElementById("textInput");
 let dateInput = document.getElementById("dateInput");
 let textArea = document.getElementById("textArea");
 let msg = document.getElementById("msg");
+let tasks = document.getElementById("tasks");
 
 form.addEventListener("submit", (e)=>{
   e.preventDefault();
@@ -27,3 +28,7 @@ let acceptData = () => {
 
   console.log(data);
 };
+
+let createTasks =() => {
+
+}
