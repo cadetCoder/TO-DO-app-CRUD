@@ -26,9 +26,9 @@ let acceptData = () => {
   data["date"] = dateInput.value;
   data["description"] = textArea.value;
 
-  console.log(data);
+  createTasks();
 };
 
 let createTasks =() => {
-
+  tasks.innerHTML += ""
 }
