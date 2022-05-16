@@ -19,6 +19,8 @@ body {
   overflow-y: scroll;
 }
 
+.app::-webkit-scrollbar { width: 0 !important }
+
 #addNew {
   display: flex;
   background-color: rgba(171, 206, 161, 0.35);
