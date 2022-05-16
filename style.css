@@ -19,7 +19,9 @@ body {
   overflow-y: scroll;
 }
 
-.app::-webkit-scrollbar { width: 0 !important }
+.app::-webkit-scrollbar { 
+  width: 0 !important 
+}
 
 #addNew {
   display: flex;
