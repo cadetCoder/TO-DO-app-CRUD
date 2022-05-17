@@ -40,4 +40,10 @@ let createTasks = () => {
     <i class="fas fa-trash-alt"></i>
   </span>
 </div>`;
-}
+};
+
+let resetForm = () => {
+  textInput.value = "";
+  dateInput.value = "";
+  textArea.value = "";
+};
