@@ -40,6 +40,8 @@ let createTasks = () => {
     <i class="fas fa-trash-alt"></i>
   </span>
 </div>`;
+
+resetForm();
 };
 
 let resetForm = () => {
