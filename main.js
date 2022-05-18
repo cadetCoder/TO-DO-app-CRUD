@@ -20,14 +20,18 @@ let formValidation = ()=> {
   }
 };
 
-let data = {};
+let data = [];
 
 let acceptData = () => {
-  data["text"] = textInput.value;
-  data["date"] = dateInput.value;
-  data["description"] = textArea.value;
+  data.push({
+    text: textInput.value,
+    date: dateInput.value,
+    description: textarea.value,
+  });
 
-  createTasks();
+  localStorage.setItem("data", JSON.stringify(data));
+
+  console.log(data);
 };
 
 let createTasks = () => {
