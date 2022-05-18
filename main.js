@@ -52,5 +52,5 @@ resetForm();
 let resetForm = () => {
   textInput.value = "";
   dateInput.value = "";
-  textArea.value = "";
+  textarea.value = "";
 };
