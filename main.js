@@ -17,6 +17,7 @@ let formValidation = ()=> {
   else {
     msg.innerHTML = "";
     acceptData();
+    add.setAttribute("data-bs-dismiss", "modal");
   }
 };
 
