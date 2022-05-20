@@ -56,7 +56,7 @@ resetForm();
 };
 
 let deleteTask = (e)=>{
-  e.remove();
+  e.parentElement.parentElement.remove();
 };
 
 let resetForm = () => {
