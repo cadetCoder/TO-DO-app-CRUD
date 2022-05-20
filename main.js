@@ -55,8 +55,8 @@ let createTasks = () => {
 resetForm();
 };
 
-let deleteTask = ()=>{
-
+let deleteTask = (e)=>{
+  e.remove();
 };
 
 let resetForm = () => {
