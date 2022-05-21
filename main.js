@@ -59,6 +59,13 @@ let deleteTask = (e)=>{
   e.parentElement.parentElement.remove();
 };
 
+let editTask = (e)=> {
+  let selectedTask = e.parentElement;
+  textInput.value = "";
+  dateInput.value = "";
+  textarea.value = "";
+};
+
 let resetForm = () => {
   textInput.value = "";
   dateInput.value = "";
