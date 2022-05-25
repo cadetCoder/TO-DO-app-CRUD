@@ -74,3 +74,7 @@ let resetForm = () => {
   dateInput.value = "";
   textarea.value = "";
 };
+
+(() => {
+  data = localStorage.getItem("data");
+})();
