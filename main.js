@@ -41,16 +41,20 @@ let acceptData = () => {
 };
 
 let createTasks = () => {
-  tasks.innerHTML += `
-  <div>
-  <Span class="fw-bold">${data.text}</Span>
-  <Span class="small text-secondary">${data.date}</Span>
-  <p>${data.description}</p>
-  <span class="options">
-    <i class="fas fa-edit"></i>
-    <i onClick ="deleteTask(this)" class="fas fa-trash-alt"></i>
-  </span>
-</div>`;
+
+  data.map((x,y) => {
+    return (tasks.innerHTML += `
+    <div id=${y}>
+    <Span class="fw-bold">${data.text}</Span>
+    <Span class="small text-secondary">${data.date}</Span>
+    <p>${data.description}</p>
+    <span class="options">
+      <i class="fas fa-edit"></i>
+      <i onClick ="deleteTask(this)" class="fas fa-trash-alt"></i>
+    </span>
+  </div>`
+  );
+  });
 
 resetForm();
 };
