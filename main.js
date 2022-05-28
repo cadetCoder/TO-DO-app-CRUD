@@ -44,9 +44,9 @@ let createTasks = () => {
   data.map((x,y) => {
     return (tasks.innerHTML += `
     <div id=${y}>
-    <Span class="fw-bold">${data.text}</Span>
-    <Span class="small text-secondary">${data.date}</Span>
-    <p>${data.description}</p>
+    <Span class="fw-bold">${x.text}</Span>
+    <Span class="small text-secondary">${x.date}</Span>
+    <p>${x.description}</p>
     <span class="options">
       <i class="fas fa-edit"></i>
       <i onClick ="deleteTask(this)" class="fas fa-trash-alt"></i>
@@ -79,6 +79,6 @@ let resetForm = () => {
 };
 
 (() => {
-  data = localStorage.getItem("data");
-  createTasks()
+  data = JSON.parse(localStorage.getItem("data"));
+  createTasks();
 })();
