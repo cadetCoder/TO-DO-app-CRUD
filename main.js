@@ -41,7 +41,8 @@ let acceptData = () => {
 };
 
 let createTasks = () => {
-  data.map((x,y) => {})
+
+  data.map((x,y) => {
     return (tasks.innerHTML += `
     <div id=${y}>
     <Span class="fw-bold">${data.text}</Span>
