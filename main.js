@@ -80,4 +80,5 @@ let resetForm = () => {
 
 (() => {
   data = localStorage.getItem("data");
+  createTasks()
 })();
