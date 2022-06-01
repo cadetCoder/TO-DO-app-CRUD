@@ -72,7 +72,7 @@ let editTask = (e)=> {
   dateInput.value = selectedTask.children[1].innerHTML;
   textarea.value = selectedTask.children[2].innerHTML;
 
-  selectedTask.remove();
+  deleteTask(e);
 };
 
 let resetForm = () => {
