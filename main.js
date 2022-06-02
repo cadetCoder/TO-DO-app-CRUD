@@ -65,7 +65,7 @@ let deleteTask = (e) => {
   localStorage.setItem("data", JSON.stringify(data));
 };
 
-let editTask = (e)=> {
+let editTask = (e) => {
   let selectedTask = e.parentElement.parentElement;
 
   textInput.value = selectedTask.children[0].innerHTML;
