@@ -8,6 +8,7 @@ let add = document.getElementById("add");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  formValidation();
 });
 
 let formValidation = () => {
