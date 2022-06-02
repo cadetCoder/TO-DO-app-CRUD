@@ -6,11 +6,11 @@ let msg = document.getElementById("msg");
 let tasks = document.getElementById("tasks");
 let add = document.getElementById("add");
 
-form.addEventListener("submit", (e)=>{
+form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
-let formValidation = ()=> {
+let formValidation = () => {
   if(textInput.value === ""){
     msg.innerHTML = "Task cannot be blank";
   }
