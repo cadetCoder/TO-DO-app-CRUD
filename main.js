@@ -12,10 +12,9 @@ form.addEventListener("submit", (e) => {
 });
 
 let formValidation = () => {
-  if(textInput.value === ""){
+  if (textInput.value === "") {
     msg.innerHTML = "Task cannot be blank";
-  }
-  else {
+  } else {
     msg.innerHTML = "";
     acceptData();
     add.setAttribute("data-bs-dismiss", "modal");
