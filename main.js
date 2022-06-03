@@ -15,6 +15,7 @@ let formValidation = () => {
   if (textInput.value === "") {
     msg.innerHTML = "Task cannot be blank";
   } else {
+    console.log("success");
     msg.innerHTML = "";
     acceptData();
     add.setAttribute("data-bs-dismiss", "modal");
