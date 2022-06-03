@@ -47,18 +47,19 @@ let createTasks = () => {
   data.map((x,y) => {
     return (tasks.innerHTML += `
     <div id=${y}>
-    <Span class="fw-bold">${x.text}</Span>
-    <Span class="small text-secondary">${x.date}</Span>
-    <p>${x.description}</p>
-    <span class="options">
-      <i class="fas fa-edit"></i>
-      <i onClick ="deleteTask(this)" class="fas fa-trash-alt"></i>
-    </span>
+      <Span class="fw-bold">${x.text}</Span>
+      <Span class="small text-secondary">${x.date}</Span>
+      <p>${x.description}</p>
+
+      <span class="options">
+        <i class="fas fa-edit"></i>
+        <i onClick ="deleteTask(this)" class="fas fa-trash-alt"></i>
+      </span>
   </div>`
   );
   });
 
-resetForm();
+  resetForm();
 };
 
 let deleteTask = (e) => {
